@@ -10,7 +10,7 @@ use ProEmergotech\Correlate\Correlate;
  * @category  \ProEmergotech\Correlate\Tests
  * @package   \ProEmergotech\Correlate\Tests
  */
-class CorrelateTest extends \PHPUnit_Framework_TestCase
+class CorrelateTest extends TestCase
 {
     /**
      * @before
