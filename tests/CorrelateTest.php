@@ -7,8 +7,8 @@ use ProEmergotech\Correlate\Correlate;
 
 /**
  *
- * @category  \Example\PHPUnitTestCases
- * @package   \Example\PHPUnitTestCases
+ * @category  \ProEmergotech\Correlate\Tests
+ * @package   \ProEmergotech\Correlate\Tests
  */
 class CorrelateTest extends \PHPUnit_Framework_TestCase
 {
