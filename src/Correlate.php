@@ -28,12 +28,12 @@ class Correlate
     /**
      * @var string
      */
-    protected static $headerName = static::DEFAULT_HEADER_NAME;
+    protected static $headerName = self::DEFAULT_HEADER_NAME;
 
     /**
      * @var string
      */
-    protected static $paramName = static::DEFAULT_PARAM_NAME;
+    protected static $paramName = self::DEFAULT_PARAM_NAME;
 
     /**
      * @var Closure
@@ -46,7 +46,7 @@ class Correlate
      */
     public static function id(): string
     {
-        return (string) static::getGeneratorFunc()();
+        return (string) self::getGeneratorFunc()();
     }
 
     /**
@@ -54,7 +54,7 @@ class Correlate
      */
     public static function getHeaderName(): string
     {
-        return static::$headerName;
+        return self::$headerName;
     }
 
     /**
@@ -62,7 +62,7 @@ class Correlate
      */
     public static function setHeaderName(string $val)
     {
-        static::$headerName = $val;
+        self::$headerName = $val;
     }
 
     /**
@@ -70,7 +70,7 @@ class Correlate
      */
     public static function getParamName(): string
     {
-        return static::$paramName;
+        return self::$paramName;
     }
 
     /**
@@ -78,7 +78,7 @@ class Correlate
      */
     public static function setParamName(string $val)
     {
-        static::$paramName = $val;
+        self::$paramName = $val;
     }
 
     /**
@@ -86,8 +86,8 @@ class Correlate
      */
     public static function getGeneratorFunc(): Closure
     {
-        if ((static::$generatorFunc instanceof Closure)) {
-            return static::$generatorFunc;
+        if ((self::$generatorFunc instanceof Closure)) {
+            return self::$generatorFunc;
         }
 
         return function () {
@@ -100,6 +100,6 @@ class Correlate
      */
     public function setGeneratorFunc(Closure $g)
     {
-        static::$generatorFunc = $q;
+        self::$generatorFunc = $q;
     }
 }
