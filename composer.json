@@ -31,7 +31,7 @@
   	}
   ],
 	"require": {
-    "webpatser/laravel-uuid": "^2.0",
+    "webpatser/laravel-uuid": "^2.0"
   },
   "require-dev": {
     "fzaninotto/faker": "~1.4",
