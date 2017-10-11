@@ -100,6 +100,6 @@ class Correlate
      */
     public function setGeneratorFunc(Closure $g)
     {
-        self::$generatorFunc = $q;
+        self::$generatorFunc = $g;
     }
 }
